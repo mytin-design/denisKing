@@ -1,0 +1,390 @@
+
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,300&display=swap');
+
+styles for theme 1 
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+*/
+
+/* styles for theme 2 */
+
+
+:root {
+    --main-white: #020220;
+    --text-white: #fff;
+    --text-black: #000;
+    --nav-back: #fff;
+    --main-blue: #fff;
+    --main-gray: rgba(226, 225, 225, 0.053);
+    --btn-back: rgba(17, 17, 58, 0.937);
+    --btn-color: #fff;
+    --btn-hover: rgb(10, 7, 54);
+    --scrollbar: rgba(43, 30, 30, 0.657);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    background: var(--main-gray);
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    height: 4pc;
+    background-color: var(--nav-back);
+    width: 100%;
+    color: var(--main-white);
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 0 0.6pc 0.006pc #eee;
+
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 22pc;
+    padding-right: .8pc;
+}
+
+li {
+    list-style-type: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1pc; /*10px = 1pc*/
+}
+
+
+
+a {
+    text-decoration: none;
+    color: var(--main-white);
+    font-weight: 900;
+    font-size: 1.4pc; /* 1pc = 1rem - confirm*/
+}
+
+#central {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;*/
+}
+
+
+#welcome-section {
+    background: var(--main-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 60vh;
+    flex-flow: column;
+
+}
+
+.welcome-text b {
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--main-white);
+}
+
+#welcome-section p {
+    font-style: italic;
+    font-size: 1.9rem;
+
+}
+
+#projects {
+    display: flex;
+    background: var(--main-gray);
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+article {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+}
+
+#works {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    width: 70%;
+    height: 70%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-color: var(--scrollbar) rgba(7, 7, 47, 0.289);
+    gap: 2pc;
+    padding: 2pc;
+    border-radius: .4pc;
+    box-shadow: 0 0 2pc .0009pc rgba(54, 53, 53, 0.141);
+    background-color: rgba(249, 249, 249, 0.049);
+}
+
+
+
+.project-text h1 {
+    font-size: 2.6rem;
+    color:var(--main-white);
+    border-bottom: .2pc solid rgb(19, 2, 2);
+}
+
+.project-tile {
+    width: 50pc;
+    height: 3.7pc;
+    padding: 1pc;
+    border-radius: .3pc;
+    box-shadow: 0 0 .2pc .001pc rgba(0, 0, 0, 0.209);
+
+}
+
+
+
+.show-all {
+    width: 10pc;
+    height: 2.5pc;
+    background: var(--btn-back);
+    color: var(--btn-color);
+    border: none;
+    font-size: 1.3rem;
+    transition: transform .5s;
+}
+
+.show-all:hover {
+    transform: scale(1.1);
+    background: var(--btn-hover);
+    color: rgb(255,255,255);
+    cursor: pointer;
+}
+
+.show-all::after {
+    content: " >";
+    font-weight: 900;
+}
+
+.caption {
+    border: 1px solid var(--main-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-gray);
+    color: var(--main-white);
+    height: 3pc;
+    width: 98%;
+    font-size: 1.5rem;
+
+}
+
+.caption:hover {
+    cursor: pointer;
+    border: 1px solid rgba(190, 189, 189, 0.196);
+    background-color: rgba(195, 192, 192, 0.141) ;
+
+}
+
+/*
+
+.caption:hover::before {
+    content: "<  ";
+    color: var(--main-red);
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+.caption:hover::after {
+    content: "  />";
+    color: var(--main-red);
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+*/
+/* footer - contact section */
+
+.foo {
+    height: 100vh;
+    background-color: var(--main-gray);
+    color: var(--main-white);
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.work-together {
+    height: 80vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lets-work {
+    display: flex;
+    justify-content: space-around;
+    padding: .5pc;
+    flex-flow: column;
+    align-items: center;
+    height: 10pc;
+    text-align: center;
+    border-radius: .5pc;
+
+   /* 
+    box-shadow: 0 0  16pc rgba(255, 166, 0, 0.141);
+   --I just realized that box-shadow provides a background in the specified container
+   background-color: rgba(241, 241, 243, 0.089); */
+
+
+}
+.lets-work h2 {
+    font-size: 3rem;
+    line-height: 5pc;
+    /*transition: font-size 2s;*/
+
+}
+
+/*
+.lets-work h2:hover {
+    font-size: 7rem;
+}*/
+
+#contact-info {
+    width: 40%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.c-link {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: var(--main-white);
+}
+
+.c-link:hover {
+    color: rgb(33, 30, 243);
+}
+
+.commentaries {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: .6pc;
+}
+
+.commentaries p {
+    width: 40%;
+}
+
+.blue {
+    color: blue;
+}
+
+.blue:hover {
+    color: rgba(0, 0, 255, 0.426);
+}
+
+.navy {
+    color: navy;
+}
+
+.navy:hover {
+    color: rgba(0, 0, 128, 0.46);
+}
+
+
+.skyblue {
+    color: rgb(11, 140, 245);
+}
+.skyblue:hover {
+    color: rgba(8, 100, 247, 0.461);
+}
+
+.green {
+    color: green;
+}
+.green:hover {
+    color: rgba(0, 128, 0, 0.465);
+}
+.copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6.5pc;
+}
+
+/* for screen displays less than 996px : ipad, tablet */
+
+@media only screen and (max-width: 996px) {
+    #contact-info {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+    }
+        
+}
+
+/* for screen displays less than 375px: phones */
+@media only screen and (max-width: 375px) {
+    #works {
+        width: 90%;
+        padding: .5pc;
+        box-shadow: 0 0 0.6pc 0.00pc rgba(169, 169, 169, 0.563);
+    }
+
+    #contact-info {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .commentaries {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        gap: 2pc;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .commentaries p {
+        width: 100%;
+    }
+    
+  
+}
+
+
+
+
