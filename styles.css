@@ -144,7 +144,7 @@ article {
     height: 70%;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    scrollbar-color: var(--scrollbar) rgba(7, 7, 47, 0.289) ;
+    scrollbar-color: var(--scrollbar) rgba(7, 7, 47, 0.289);
     gap: 2pc;
     padding: 2pc;
     border-radius: .4pc;
@@ -161,9 +161,9 @@ article {
 }
 
 .project-tile {
-    width: 430px;
-    height: 370px;
-    padding: 10px;
+    width: 50pc;
+    height: 3.7pc;
+    padding: 1pc;
     border-radius: .3pc;
     box-shadow: 0 0 .2pc .001pc rgba(0, 0, 0, 0.209);
 
@@ -172,8 +172,8 @@ article {
 
 
 .show-all {
-    width: 150px;
-    height: 50px;
+    width: 10pc;
+    height: 2.5pc;
     background: var(--btn-back);
     color: var(--btn-color);
     border: none;
@@ -259,8 +259,13 @@ article {
     height: 10pc;
     text-align: center;
     border-radius: .5pc;
+
+   /* 
     box-shadow: 0 0  16pc rgba(255, 166, 0, 0.141);
-    background-color: rgba(241, 241, 243, 0.205);
+   --I just realized that box-shadow provides a background in the specified container
+   background-color: rgba(241, 241, 243, 0.089); */
+
+
 }
 .lets-work h2 {
     font-size: 3rem;
@@ -302,20 +307,35 @@ article {
     width: 40%;
 }
 
-.blue:hover {
+.blue {
     color: blue;
 }
 
-.navy:hover {
+.blue:hover {
+    color: rgba(0, 0, 255, 0.426);
+}
+
+.navy {
     color: navy;
 }
 
-.skyblue:hover {
-    color: rgb(86, 150, 252);
+.navy:hover {
+    color: rgba(0, 0, 128, 0.46);
 }
 
-.green:hover {
+
+.skyblue {
+    color: rgb(11, 140, 245);
+}
+.skyblue:hover {
+    color: rgba(8, 100, 247, 0.461);
+}
+
+.green {
     color: green;
+}
+.green:hover {
+    color: rgba(0, 128, 0, 0.465);
 }
 .copyright {
     width: 100%;
@@ -324,6 +344,8 @@ article {
     align-items: center;
     margin-top: 6.5pc;
 }
+
+/* for screen displays less than 996px : ipad, tablet */
 
 @media only screen and (max-width: 996px) {
     #contact-info {
@@ -334,6 +356,7 @@ article {
         
 }
 
+/* for screen displays less than 375px: phones */
 @media only screen and (max-width: 375px) {
     #works {
         width: 90%;
