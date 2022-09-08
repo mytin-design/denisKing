@@ -140,7 +140,7 @@ article {
     display: flex;
     flex-flow: wrap;
     justify-content: space-around;
-    width: 100%;
+    width: 70%;
     height: 70%;
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -170,7 +170,7 @@ article {
 }
 
 .work-img {
-    width: 100%;
+    width: 70%;
 }
 
 
