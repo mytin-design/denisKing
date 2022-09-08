@@ -161,7 +161,7 @@ article {
 }
 
 .project-tile {
-    width: 70%;
+    width: 80%;
     height: 3.7pc;
     padding: 1pc;
     border-radius: .3pc;
@@ -171,7 +171,7 @@ article {
 
 .work-img {
     width: 70%;
-    height: 50%;
+    height: 50pc;
 }
 
 
