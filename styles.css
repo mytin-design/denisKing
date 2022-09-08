@@ -40,7 +40,7 @@ html, body {
     scroll-behavior: smooth;
     padding: 0;
     margin: 0;
-    background: var(--main-gray);
+    background: #f3f6fd;
 }
 
 #navbar {
